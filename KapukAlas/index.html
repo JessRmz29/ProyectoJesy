@@ -8,7 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    
+     <header>
       
       <!-- empieza javascript-->
       
@@ -148,7 +149,7 @@
             
             <a href="file:///C:/Users/Jessica%20Rmz/Desktop/KapukAlas/index.html" class="btn btn-primary btn-lg pull-right" role="button">Learn more</a><br><br><br><br><br><br><br><br><br><br><br><br><br>
             
-          
+          <!--empieza javascript-->
           <script type="text/javascript">
             window.setInterval (BlinkIt, 500);
             var color = "red";
@@ -161,15 +162,138 @@
            <center><div id="blink">Cuida el medio ambiente!</div></center>
            <div id="blink" onclick="parent.location='http://norfipc.com'">
            </div>
-          
-          
-          
-          
+           
+           <!--termina javascript-->
+        
           </div>
         </div>
       </div>
     </section>
+  
+   <div class="wideBox">
+    <center><h1>Grafica de algunos de los agentes contaminantes principales </h1></center>
+    <!--<p>Click a colour in the chart, or an item in the table, to pull out a slice! <a href="#">Back to Tutorial</a></p>-->
+  </div>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<center><script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(dibujarGrafico);
+   function dibujarGrafico() {
+     // Tabla de datos: valores y etiquetas de la gráfica
+     var data = google.visualization.arrayToDataTable([
+       ['Texto', 'Valor numérico'],
+       ['Residuos', 5.0],
+       ['Desechos industriales', 13.0],
+       ['Diversas causas', 14.0],
+       ['Calefaccion domestica', 15.0],
+       ['Transportes diversos', 53.0]
+     ]);
+     var options = {
+       title: 'Proporciones relativas'
+     }
+     // Dibujar el gráfico
+     new google.visualization.ColumnChart( 
+     //ColumnChart sería el tipo de gráfico a dibujar
+       document.getElementById('GraficoGoogleChart-ejemplo-1')
+     ).draw(data, options);
+   }
+ </script>
+  
+<body>
+  
+  <table id="chartData">
 
+    <tr>
+      <th>Causas</th><th>Valores</th>
+     </tr>
+
+    <tr style="color: #0DA068">
+      <td>Residuos</td><td>5.0</td>
+    </tr>
+
+    <tr style="color: #194E9C">
+      <td>Desechos industriales</td><td>13.0</td>
+    </tr>
+
+    <tr style="color: #ED9C13">
+      <td>Diversas causas</td><td>14.0</td>
+    </tr>
+
+    <tr style="color: #ED5713">
+      <td>Calefaccion domestica</td><td>15.0</td>
+    </tr>
+
+    <tr style="color: #057249">
+      <td>Transportes diversos</td><td>53.0</td>
+    </tr>
+
+  </table>
+  
+<div id="GraficoGoogleChart-ejemplo-1" style="width: 800px; height: 600px">
+</div>
+<div class="wideBox">
+    <p> <a href="#">Cuida el ambiente</a></p>
+    <!--<p style="font-size: .8em"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.elated.com/" property="cc:attributionName" rel="cc:attributionURL">http://www.elated.com/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>-->
+  </div>
+</div>
+  
+    
+    
+     <!--grafica
+    
+    <div id="container">
+
+  <div class="wideBox">
+    <center><h1>Grafica de la contaminacion ambiental</h1></center>
+    <p>Click a colour in the chart, or an item in the table, to pull out a slice! <a href="#">Back to Tutorial</a></p>
+  </div>
+
+  <canvas id="chart" width="600" height="500"></canvas>
+
+  <table id="chartData">
+
+    <tr>
+      <th>Widget</th><th>Sales ($)</th>
+     </tr>
+
+    <tr style="color: #0DA068">
+      <td>SuperWidget</td><td>1862.12</td>
+    </tr>
+
+    <tr style="color: #194E9C">
+      <td>MegaWidget</td><td>1316.00</td>
+    </tr>
+
+    <tr style="color: #ED9C13">
+      <td>HyperWidget</td><td>712.49</td>
+    </tr>
+
+    <tr style="color: #ED5713">
+      <td>WonderWidget</td><td>3236.27</td>
+    </tr>
+
+    <tr style="color: #057249">
+      <td>MicroWidget</td><td>6122.06</td>
+    </tr>
+
+    <tr style="color: #5F91DC">
+      <td>NanoWidget</td><td>128.11</td>
+    </tr>
+
+    <tr style="color: #F88E5D">
+      <td>LovelyWidget</td><td>245.55</td>
+    </tr>
+  </table>
+
+  <div class="wideBox">
+    <p>© Elated.com | <a href="#">Back to Tutorial</a></p>
+    <p style="font-size: .8em"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.elated.com/" property="cc:attributionName" rel="cc:attributionURL">http://www.elated.com/</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+  </div>
+</div>
+    
+   <!--grafica-->
+    
+    
     <section id="portfolio">
       <div class="container">
         <h4>REFLEXIONES</h4>
