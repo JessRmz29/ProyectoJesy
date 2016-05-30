@@ -1,3 +1,0 @@
-<?php
-echo "Repositorio listo";
-?>
